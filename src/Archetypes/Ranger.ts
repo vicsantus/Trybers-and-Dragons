@@ -19,7 +19,7 @@ export default class Ranger extends Archetype {
     return Ranger.lastId;
   }
 
-  protected get energyType(): EnergyType {
+  get energyType(): EnergyType {
     return this._energyType;
   }
 }

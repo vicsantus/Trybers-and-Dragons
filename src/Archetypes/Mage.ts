@@ -19,7 +19,7 @@ export default class Mage extends Archetype {
     return Mage.lastId;
   }
 
-  protected get energyType(): EnergyType {
+  get energyType(): EnergyType {
     return this._energyType;
   }
 }

@@ -13,5 +13,5 @@ export default abstract class Race implements IRace {
     throw new Error('Not implemented');
   }
 
-  protected abstract get maxLifePoints(): number;
+  abstract get maxLifePoints(): number;
 }

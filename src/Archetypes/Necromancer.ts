@@ -19,7 +19,7 @@ export default class Necromancer extends Archetype {
     return Necromancer.lastId;
   }
 
-  protected get energyType(): EnergyType {
+  get energyType(): EnergyType {
     return this._energyType;
   }
 }

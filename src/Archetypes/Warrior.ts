@@ -19,7 +19,7 @@ export default class Warrior extends Archetype {
     return Warrior.lastId;
   }
 
-  protected get energyType(): EnergyType {
+  get energyType(): EnergyType {
     return this._energyType;
   }
 }
