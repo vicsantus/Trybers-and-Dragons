@@ -27,7 +27,7 @@ export default class Character implements Fighter {
     this._energy = { type_: arc.energyType, amount: getRandomInt(1, 10) };
   }
 
-  get lifePoints() { return this._lifePoints; }
+  get lifePoints(): number { return this._lifePoints; }
 
   get archetype() { return this._archetype; }
 
@@ -43,11 +43,11 @@ export default class Character implements Fighter {
 
   get energy(): Energy { return { ...this._energy }; }
   
-  attack(enemy: SimpleFighter): void {
+  attack(enemy: SimpleFighter | Fighter): void {
     enemy.receiveDamage(this._strength);
   }
 
-  special?(enemy: SimpleFighter): void {
+  special?(enemy: SimpleFighter | Fighter): void {
     enemy.receiveDamage(this._strength * 1.7);
   }
 
